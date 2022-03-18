@@ -1,7 +1,7 @@
 //palvelimen lataus
 
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
-palvelin->selain: HTML-koodi
+palvelin->selain: HTML-koodi (kaikki notet)
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
 palvelin->selain: main.css
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
@@ -10,7 +10,5 @@ selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
 palvelin->selain: main.js
 
 //form post request
-selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
-palvelin->selain: kaikki notet renderöi
 selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 palvelin->selain: renderöi kaikki notet + uuden lisätyn noten
